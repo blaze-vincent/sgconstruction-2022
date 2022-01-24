@@ -5,7 +5,7 @@ export default function Footer(){
     <div
       className="flex flex-col items-center gap-4
       sm:flex-row sm:justify-between 
-      max-w-screen-2xl m-auto"
+      max-w-screen-xl m-auto"
     >
       <div
         className="flex flex-col gap-2 items-center"
