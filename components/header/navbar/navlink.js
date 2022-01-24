@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 
-export default function Navlink({link, activeRoute, scrolled}){
+export default function Navlink({link, activeRoute, scrolled, setHidden, offset}){
   const [visible, setVisible] = useState(true);
 
   const containerEl = useRef(null)
@@ -11,16 +11,20 @@ export default function Navlink({link, activeRoute, scrolled}){
     observer.observe(containerEl.current)
   }, [])
 
+  useEffect(_ => {
+    setHidden(link, !visible)
+  }, [visible])
+
   return (<a
     ref={containerEl}
     className={
-      `min-w-max text-lg font-medium drop-shadow-md shadow-neutral-400 
+      `min-w-max text-lg font-medium drop-shadow-md shadow-neutral-400 justify-center
       ${!visible && 'invisible'} 
-      ${(link?.location || `/${link.toLowerCase()}`) === activeRoute ? 'text-neutral-600' 
+      ${(link?.altLocation || `/${link.name.toLowerCase()}`) === activeRoute ? 'text-neutral-600' 
       : scrolled ? 'text-neutral-400' : 'text-white'} 
       `
     }
-    href={link?.location || link.toLowerCase()}
+    href={link?.altLocation || link.name.toLowerCase()}
   >
     {(link?.name || link).toUpperCase()}
   </a>)

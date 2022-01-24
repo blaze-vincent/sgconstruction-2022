@@ -1,5 +1,8 @@
 import Navbar from "./navbar/navbar"
 import { useRef, useEffect, useState } from "react"
+import HamburgerButton from "./navbar/hamburgerMenu/hamburgerButton";
+import { useRouter } from "next/router"
+import HamburgerMenu from "./navbar/hamburgerMenu/hamburgerMenu";
 
 export default function Header(){
 
@@ -12,20 +15,39 @@ export default function Header(){
     observer.observe(containerEl.current)
   }, [])
   
-  return (<div
-    ref={containerEl}
-    className={
-      `flex flex-row gap-8 items-center sticky top-[-1px] h-auto transition-all 
-      ${scrolled && 'bg-white'}
-      `
-    }
-  >
-    <img
-      className="h-[5rem] p-3"
-      src='/logo.svg' 
-      alt="SG Construction Company and Butler General Contractors logos"
-    />
+  const [collapsedLinks, setCollapsedLinks] = useState(new Set([]))
 
-    <Navbar scrolled={scrolled} />
+  const router = useRouter()
+  const [activeRoute, _] = useState(router.pathname)
+
+  const [hamburgerMenuVisible, setHamburgerMenuVisible] = useState(false);
+  const sendHamburgerMenuSignal = function(){
+    setHamburgerMenuVisible(!hamburgerMenuVisible);
+  }
+  const [hamburgerButtonVisible, setHamburgerButtonVisible] = useState(false);
+  useEffect(_ => {
+    setHamburgerButtonVisible(Array.from(collapsedLinks).length > 0)
+  }, [collapsedLinks])
+
+  return (<div className="sticky top-[-1px]">
+    <div
+      ref={containerEl}
+      className={
+        `h-auto transition-all 
+        ${scrolled && 'bg-white'}
+        `
+      }
+    >    
+      <div className="p-3 max-w-screen-xl m-auto flex flex-row gap-4 items-center">
+        <img
+          className="p-3 h-[5rem]"
+          src='/logo.svg' 
+          alt="SG Construction Company and Butler General Contractors logos"
+        />
+        <Navbar scrolled={scrolled} collapsedLinks={collapsedLinks} setCollapsedLinks={setCollapsedLinks} activeRoute={activeRoute}/>
+        <HamburgerButton visible={hamburgerButtonVisible} collapsedLinks={collapsedLinks} sendHamburgerMenuSignal={sendHamburgerMenuSignal}/>
+      </div>
+    </div>
+    <HamburgerMenu collapsedLinks={collapsedLinks} activeRoute={activeRoute} visible={hamburgerMenuVisible}/>
   </div>)
 }
