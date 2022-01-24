@@ -6,26 +6,33 @@ export default function Navbar({scrolled, setCollapsedLinks, collapsedLinks, act
 
   const [navlinks, setNavlinks] = useState(new Set([
     {
+      order: 0,
       name: 'Home',
       altLocation: '/',
     },
     {
+      order: 1,
       name: 'About'
     },
     {
+      order: 2,
       name: 'Services'
     },
     {
+      order: 3,
       name: 'Projects'
     },
     {
+      order: 4,
       name: 'Butler Building',
       altLocation: '/butler-building'
     }, 
     {
+      order: 5,
       name: 'Careers'
     },
     {
+      order: 6,
       name: 'Contact'
     }
   ]))

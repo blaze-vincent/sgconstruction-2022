@@ -29,20 +29,21 @@ export default function Header(){
     setHamburgerButtonVisible(Array.from(collapsedLinks).length > 0)
   }, [collapsedLinks])
 
-  return (<div className="sticky top-[-1px]">
+  return (<div className="sticky top-[-1px] z-50 drop-shadow-md">
     <div
       ref={containerEl}
       className={
-        `h-auto transition-all 
+        `h-auto transition-colors 
         ${scrolled && 'bg-white'}
         `
       }
     >    
-      <div className="p-3 max-w-screen-xl m-auto flex flex-row gap-4 items-center">
+      <div className="p-3 max-w-screen-xl m-auto flex flex-row gap-4 items-center cursor-pointer">
         <img
           className="p-3 h-[5rem]"
           src='/logo.svg' 
           alt="SG Construction Company and Butler General Contractors logos"
+          onClick={_ => window.location.replace('/')}
         />
         <Navbar scrolled={scrolled} collapsedLinks={collapsedLinks} setCollapsedLinks={setCollapsedLinks} activeRoute={activeRoute}/>
         <HamburgerButton visible={hamburgerButtonVisible} collapsedLinks={collapsedLinks} sendHamburgerMenuSignal={sendHamburgerMenuSignal}/>

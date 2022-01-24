@@ -1,6 +1,6 @@
 export default function HamburgerMenu({collapsedLinks, activeRoute, visible}){
   return <div className={`bg-neutral-800 w-full left-0 bottom-0 flex flex-col items-center ${visible && 'block' || 'hidden'}`}>
-    {Array.from(collapsedLinks).reverse().map((link, index) => {
+    {Array.from(collapsedLinks).sort((a, b) => (a.order > b.order) ? 1 : -1).map((link, index) => {
       return <a 
         key={index} 
         href={link?.altLocation || link.name.toLowerCase()}
