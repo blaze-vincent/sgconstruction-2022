@@ -1,7 +1,7 @@
 export default function PageBadge({location, icon: {src, alt, title}, text: {header, body}}){
   return <a href={location}>
     <div
-      className="w-max flex flex-col items-center sm:items-start p-4 sm:text-left text-center sm:flex-row gap-2"
+      className="w-max flex flex-col items-center md:items-start p-4 md:text-left text-center md:flex-row gap-2"
     >
       <div
         className="overflow-hidden 

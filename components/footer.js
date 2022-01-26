@@ -58,7 +58,7 @@ export default function Footer(){
           <input 
             type='text' 
             placeholder="Search"
-            className="px-3 py-1 rounded-full"  
+            className="px-3 py-1 rounded-full w-[8rem] text-neutral-800"  
           /> 
           
           <button

@@ -42,7 +42,7 @@ export default function BadgeSection(){
   ]
 
   return <div
-    className="flex flex-col w-full sm:grid sm:grid-cols-3 max-w-screen-xl m-auto gap-4 items-center sm:justify-items-center"
+    className="flex flex-col w-full md:grid md:grid-cols-3 max-w-screen-xl m-auto gap-4 items-center md:justify-items-center"
   >
     {
       badgeSectionContent.map((contentObj, index) => {
