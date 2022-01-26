@@ -41,7 +41,7 @@ export default function Header(){
       <div className="p-3 max-w-screen-xl m-auto flex flex-row gap-4 items-center cursor-pointer">
         <img
           className="p-3 h-[5rem]"
-          src='/logo.svg' 
+          src='/brand/logo.svg' 
           alt="SG Construction Company and Butler General Contractors logos"
           onClick={_ => window.location.replace('/')}
         />

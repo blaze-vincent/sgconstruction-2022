@@ -15,20 +15,20 @@ export default function Footer(){
         >
           <img
             alt='Facebook icon'
-            src='/facebook_icon.svg'
+            src='/social/facebook_icon.svg'
             className="w-7 h-7"
           >
           </img>
           <img
             alt='LinkedIn icon'
-            src='/linkedin_icon.svg'
+            src='/social/linkedin_icon.svg'
             className="w-7 h-7"
           >
           </img>
         </div>
         <img
           alt='Butler General Contractor badge'
-          src='/butler_general_contractor.svg'
+          src='/brand/butler_general_contractor.svg'
           title='Butler General Contractor'
           className="h-20"
         ></img>

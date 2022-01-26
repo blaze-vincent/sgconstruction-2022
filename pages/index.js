@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <Banner 
         imageObj={{
-          src: '/casino_construction.webp',
+          src: '/images/casino_construction.webp',
           alt: 'The SG crew constructing the Catfish Bend Casino.' ,
           title: 'Catfish Bend Casino construction'
         }} 
