@@ -1,7 +1,7 @@
 export default function PageBadge({location, icon: {src, alt, title}, text: {header, body}}){
   return <a href={location}>
     <div
-      className="w-max flex flex-row gap-2"
+      className="w-max flex flex-col items-center sm:items-start p-4 sm:text-left text-center sm:flex-row gap-2"
     >
       <div
         className="overflow-hidden 
@@ -15,7 +15,7 @@ export default function PageBadge({location, icon: {src, alt, title}, text: {hea
           className="w-12 h-12 p-2 absolute"
         />
       </div>
-      <div className="text-neutral-800">
+      <div className="text-neutral-800 w-full">
         <p className="font-[Montserrat sans] font-bold text-lg">{header}</p>
         <p className="font-medium">{body}</p>
       </div>

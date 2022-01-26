@@ -7,7 +7,7 @@ export default function BadgeSection(){
       icon: {
         src: '/generic/building.svg',
         alt: 'Generic building icon',
-        title: 'Building'
+        title: 'Projects'
       },
       text: {
         header: "WHAT WE'VE DONE",
@@ -19,7 +19,7 @@ export default function BadgeSection(){
       icon: {
         src: '/generic/list.svg',
         alt: 'Generic list icon',
-        title: 'List'
+        title: 'Services'
       },
       text: {
         header: "WHAT WE DO",
@@ -31,7 +31,7 @@ export default function BadgeSection(){
       icon: {
         src: '/generic/email.svg',
         alt: 'Generic email icon',
-        title: 'Mail'
+        title: 'Contact'
       },
       text: {
         header: "WHAT CAN WE DO FOR YOU",
@@ -42,7 +42,7 @@ export default function BadgeSection(){
   ]
 
   return <div
-    className="grid grid-cols-3 max-w-screen-xl m-auto gap-4 items-center justify-items-center"
+    className="flex flex-col w-full sm:grid sm:grid-cols-3 max-w-screen-xl m-auto gap-4 items-center sm:justify-items-center"
   >
     {
       badgeSectionContent.map((contentObj, index) => {
