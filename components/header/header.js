@@ -9,8 +9,6 @@ export default function Header(){
   const [scrolled, setScrolled] = useState(false);
   const containerEl = useRef(null)
   useEffect(_ => {
-
-
     window.onscroll = _ => {setScrolled(!!window.scrollY)}
   }, [containerEl])
 
