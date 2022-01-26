@@ -9,8 +9,6 @@ export default function Slide({image: {src, alt, title}, text: {header, tag}, te
     3: 'bottom-8 right-0',
   }
 
-  console.log(textPositions[textPosition])
-
   return <div
     className="w-full h-full relative"
   >

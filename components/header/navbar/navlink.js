@@ -18,7 +18,7 @@ export default function Navlink({link, activeRoute, scrolled, setHidden, offset}
   return (<a
     ref={containerEl}
     className={
-      `min-w-max text-lg font-medium drop-shadow-md shadow-neutral-400 justify-center
+      `min-w-max text-lg font-medium drop-shadow-md shadow-neutral-400 justify-center hover:text-neutral-600
       ${!visible && 'invisible'} 
       ${(link?.altLocation || `/${link.name.toLowerCase()}`) === activeRoute ? 'text-neutral-600' 
       : scrolled ? 'text-neutral-400' : 'text-white'} 

@@ -88,7 +88,7 @@ export default function Carousel(){
     >
       <img
         src='/generic/chevron.svg' 
-        className="rounded-full min-h-8 min-w-8 w-8 h-8 rotate-180"
+        className="rounded-full min-h-8 min-w-8 w-8 h-8 rotate-180 cursor-pointer"
         onClick={_ => {
           scroll(slideShown - 1)
         }}
@@ -99,7 +99,7 @@ export default function Carousel(){
         {new Array(slides.length).fill('').map((item, index) => {
           return <button 
             key={index} 
-            className={`rounded-full min-h-3 min-w-3 w-3 h-3 block border-solid border-white border-[1px]
+            className={`rounded-full min-h-3 min-w-3 w-3 h-3 block border-solid border-white border-[1px] hover:bg-neutral-600
               ${(slideShown === index) ? 'bg-neutral-900' : 'bg-white'}
             `} 
             onClick={_ => {
@@ -111,7 +111,7 @@ export default function Carousel(){
       
       <img
         src='/generic/chevron.svg' 
-        className="rounded-full min-h-8 min-w-8 w-8 h-8"
+        className="rounded-full min-h-8 min-w-8 w-8 h-8 cursor-pointer"
         onClick={_ => {
           scroll(slideShown + 1)
         }}

@@ -13,8 +13,8 @@ export default function Header(){
       setScrolled(window.scrollY > 0)
     }, {threshold: [1]})
     observer.observe(containerEl.current)
-  }, [])
-  
+  }, [containerEl])
+
   const [collapsedLinks, setCollapsedLinks] = useState(new Set([]))
 
   const router = useRouter()
@@ -29,18 +29,18 @@ export default function Header(){
     setHamburgerButtonVisible(Array.from(collapsedLinks).length > 0)
   }, [collapsedLinks])
 
-  return (<div className="sticky top-[-1px] z-50 drop-shadow-md">
+  return (<div className="sticky -top-1 z-50 drop-shadow-md">
     <div
       ref={containerEl}
       className={
-        `h-auto transition-colors 
-        ${scrolled && 'bg-white'}
+        `h-auto transition-colors
+        ${scrolled && 'bg-white top-0'}
         `
       }
     >    
-      <div className="p-3 max-w-screen-xl justify-between m-auto flex flex-row gap-4 items-center cursor-pointer">
+      <div className="p-3 max-w-screen-xl justify-between m-auto flex flex-row gap-4 items-center">
         <img
-          className="p-3 h-[5rem]"
+          className="p-3 h-[5rem] cursor-pointer"
           src='/brand/logo.svg' 
           alt="SG Construction Company and Butler General Contractors logos"
           onClick={_ => window.location.replace('/')}
