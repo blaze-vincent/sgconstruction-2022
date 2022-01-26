@@ -9,10 +9,9 @@ export default function Header(){
   const [scrolled, setScrolled] = useState(false);
   const containerEl = useRef(null)
   useEffect(_ => {
-    const observer = new IntersectionObserver(([element]) => {
-      setScrolled(window.scrollY > 0)
-    }, {threshold: [1]})
-    observer.observe(containerEl.current)
+
+
+    window.onscroll = _ => {setScrolled(!!window.scrollY)}
   }, [containerEl])
 
   const [collapsedLinks, setCollapsedLinks] = useState(new Set([]))
@@ -29,12 +28,12 @@ export default function Header(){
     setHamburgerButtonVisible(Array.from(collapsedLinks).length > 0)
   }, [collapsedLinks])
 
-  return (<div className="sticky -top-1 z-50 drop-shadow-md">
+  return (<div className="sticky -top-px z-50 drop-shadow-md">
     <div
       ref={containerEl}
       className={
         `h-auto transition-colors
-        ${scrolled && 'bg-white top-0'}
+        ${scrolled && 'bg-white'}
         `
       }
     >    

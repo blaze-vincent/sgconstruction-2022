@@ -1,5 +1,4 @@
 import Banner from "../components/content/banner";
-import PageBadge from "../components/content/badgeSection/pageBadge";
 import BadgeSection from "../components/content/badgeSection/badgeSection";
 import Carousel from "../components/content/carousel/carousel";
 

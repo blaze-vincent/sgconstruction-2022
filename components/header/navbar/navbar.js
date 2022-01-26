@@ -45,7 +45,7 @@ export default function Navbar({scrolled, setCollapsedLinks, collapsedLinks, act
   }
 
   return <nav
-    className="flex flex-row gap-4 overflow-hidden items-center relative"
+    className="flex flex-row gap-4 overflow-hidden items-center relative "
   >
     {Array.from(navlinks).map((link, index) => {
       return <Navlink setHidden={setCollapsed} link={link} offset={index+10} activeRoute={activeRoute} key={index} scrolled={scrolled}/>
