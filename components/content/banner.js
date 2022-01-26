@@ -6,11 +6,11 @@ export default function Banner({imageObj: {src, alt, title}, textObj: {header, b
       src={src}
       alt={alt}
       title={title} 
-      className='w-full h-[30rem] max-w-screen-2xl m-auto object-cover object-bottom'  
+      className='w-screen h-[30rem] m-auto object-cover object-bottom'  
     />
     <div className="absolute flex flex-row justify-center items-center w-full h-full">
       <div
-        className="w-[35rem] h-max p-7 flex flex-col items-center bg-white text-[#3E356E] gap-4 rounded-lg"
+        className="max-w-[35rem] h-max p-7 flex flex-col items-center bg-white text-[#3E356E] gap-4 rounded-lg"
       >
         <h2
           className="font-bold text-xl"

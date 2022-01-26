@@ -1,11 +1,12 @@
 import Banner from "../components/content/banner";
 import PageBadge from "../components/content/badgeSection/pageBadge";
 import BadgeSection from "../components/content/badgeSection/badgeSection";
+import Carousel from "../components/content/carousel/carousel";
 
 export default function Home() {
   return (
     <div
-      className="flex flex-col max-w-screen-2xl m-auto gap-8"
+      className="flex flex-col max-w-screen-2xl m-auto gap-8 my-8"
     >
       <Banner 
         imageObj={{
@@ -19,6 +20,7 @@ export default function Home() {
         }}
       />
       <BadgeSection />
+      <Carousel />
     </div>
   )
 }

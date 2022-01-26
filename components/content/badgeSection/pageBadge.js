@@ -16,7 +16,7 @@ export default function PageBadge({location, icon: {src, alt, title}, text: {hea
         />
       </div>
       <div className="text-neutral-800 w-full">
-        <p className="font-[Montserrat sans] font-bold text-lg">{header}</p>
+        <p className="font-[Montserrat] font-sans font-bold text-lg">{header}</p>
         <p className="font-medium">{body}</p>
       </div>
     </div>
