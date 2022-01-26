@@ -1,6 +1,6 @@
 export default function Banner({imageObj: {src, alt, title}, textObj: {header, body}}){
   return <div
-    className="flex flex-row items-center content-center max-w-screen-2xl m-auto relative"
+    className="flex flex-row items-center content-center max-w-screen-2xl relative"
   >
     <img 
       src={src}
