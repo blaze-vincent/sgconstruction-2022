@@ -32,7 +32,7 @@ export default function Footer(){
           title='Butler General Contractor'
           className="h-20"
         ></img>
-        <p>© SG Construction Co.</p>
+        <p>&copy; SG Construction Co.</p>
       </div>
       <div
         className="flex flex-col w-max gap-4 sm:items-start sm:text-left text-center items-center"
