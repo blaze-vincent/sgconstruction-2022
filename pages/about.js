@@ -1,6 +1,6 @@
 export default function About(){
   return (<div
-    className="flex flex-col gap-8 max-w-[55rem] m-auto my-8 text-lg text-neutral-700"
+    className="flex flex-col gap-8 max-w-[55rem] m-auto my-8 text-lg text-neutral-700 p-4"
   >
     <h1
       className="text-4xl font-bold m-auto text-neutral-800"
