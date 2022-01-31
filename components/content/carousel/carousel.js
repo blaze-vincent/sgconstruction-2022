@@ -71,7 +71,7 @@ export default function Carousel(){
   }, [slideShown])
 
   return <div
-    className="max-w-screen-xl w-screen m-auto h-[35rem] overflow-x-hidden relative"
+    className="relative max-w-screen-xl w-screen m-auto h-[35rem] max-h-[80vh] overflow-x-hidden"
   >
     <div
       ref={scrollerEl}

@@ -10,18 +10,18 @@ export default function Slide({image: {src, alt, title}, text: {header, tag}, te
   }
 
   return <div
-    className="w-full h-full relative"
+    className="w-full h-full relative after:absolute after:w-full after:h-full after:bg-neutral-900 after:left-0 after:top-0 after:z-10 after:opacity-25"
   >
     <div
-      className={`h-max w-max absolute p-4
+      className={`h-max w-max absolute p-4 drop-shadow-xl shadow-neutral-900 z-20
       ${textPositions[textPosition]}
       `}
     >
       <h3
-        className="text-3xl font-semibold text-white drop-shadow-md shadow-transparent"
+        className="text-3xl font-semibold text-white "
       >{header}</h3>
       <p
-        className="text-xl text-white drop-shadow-lg font-extralight shadow-transparent"
+        className="text-xl text-white font-extralight"
       >{tag}</p>
     </div>
     <img 
