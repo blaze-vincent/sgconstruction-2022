@@ -10,10 +10,10 @@ export default function Banner({imageObj: {src, alt, title}, textObj: {header, b
     />
     <div className="absolute flex flex-row justify-center items-center w-full h-full">
       <div
-        className="max-w-[35rem] h-max p-7 flex flex-col items-center bg-white text-[#3E356E] gap-4 rounded-lg"
+        className="max-w-[35rem] h-max p-7 flex flex-col items-center bg-white text-neutral-700 gap-4"
       >
         <h2
-          className="font-bold text-xl"
+          className="text-4xl font-bold text-[#3E356E]"
         >{header}</h2>
         <p
           className="font-medium"

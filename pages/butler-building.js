@@ -31,7 +31,9 @@ export default function ButlerBuilding(){
     <h3
       className="text-3xl font-bold text-neutral-700"
     >Our services include:</h3>
-    <ul>
+    <ul
+      className="list-disc pl-4"
+    >
       <li>Budgeting and expert Butler&reg; building design consultation</li>
       <li>Preconstruction services</li>
       <li>Complete construction management services, from permitting to punch out</li>
