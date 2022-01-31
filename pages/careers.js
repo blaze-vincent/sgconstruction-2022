@@ -32,7 +32,7 @@ export default function Careers(){
       </div>
 
       <form
-        className="flex flex-col gap-2 w-screen max-w-[25rem]"
+        className="flex flex-col gap-2 w-screen max-w-[25rem] p-4"
         onSubmit={e => {e.preventDefault(); console.log(e)}}
       >
         <Input type='text' name='name' labelText='Name' required={true} placeholderText='john doe'/>
@@ -41,7 +41,7 @@ export default function Careers(){
         <Input type='tel' name='phone' labelText='Phone' required={true} placeholderText='000-000-0000'/>
         <Input type='date' name='birthday' labelText='Date of Birth' required={false} />
         <Input type='text' name='positions' labelText='Positions of Interest' required={true} placeholderText='framing, finishing'/>
-        <Input type='text' name='experience' labelText='Your construction experience...' required={true} placeholderText='have used a speed square once'/>
+        <Input type='text' name='experience' labelText='Your Construction Experience...' required={true} placeholderText='have used a speed square once'/>
         <input type='submit' value='Submit'
           className="cursor-pointer bg-[#3E356E] hover:bg-[#272145] text-white mt-2 px-4 max-w-max rounded-full"
         />
