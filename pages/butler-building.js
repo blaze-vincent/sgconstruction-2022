@@ -4,7 +4,7 @@ export default function ButlerBuilding(){
   >
     <div className="text-center flex flex-col gap-4">
       <h1
-        className="text-3xl font-bold m-auto text-neutral-800"
+        className="text-4xl font-bold m-auto text-neutral-800"
       >Butler Manufacturing&trade;</h1>
     </div>
 

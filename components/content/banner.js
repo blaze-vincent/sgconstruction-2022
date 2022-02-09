@@ -16,7 +16,7 @@ export default function Banner({imageObj: {src, alt, title}, textObj: {header, b
           className="text-4xl font-bold text-[#3E356E]"
         >{header}</h2>
         <p
-          className="font-medium"
+          className="font-medium text-xl"
         >{body}</p>
       </div>
     </div>

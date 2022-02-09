@@ -80,10 +80,10 @@ export default function Services(){
   >
     <div className="text-center flex flex-col gap-4">
       <h1
-        className="text-3xl font-bold m-auto text-neutral-800"
+        className="text-4xl font-bold m-auto text-neutral-800"
       >Construction Services</h1>
       <h2
-        className="text-xl font-bold m-auto text-neutral-800"
+        className="text-xl font-semibold m-auto text-neutral-800"
       >Since our beginnings, S.G. has been committed to providing quality service in every way!</h2>
     </div>
 
