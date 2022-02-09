@@ -10,7 +10,7 @@ export default function Header(){
   const [scrolled, setScrolled] = useState(false);
   const containerEl = useRef(null)
   useEffect(_ => {
-    window.onscroll = _ => {setScrolled(!!window.scrollY)}
+    window.onscroll = _ => {setScrolled(!!window.scrollY)} //convert to bool
   }, [containerEl])
 
   const [collapsedLinks, setCollapsedLinks] = useState(new Set([]))
