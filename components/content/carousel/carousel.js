@@ -91,6 +91,7 @@ export default function Carousel(){
       className="absolute bottom-2 flex items-center flex-row w-full justify-between px-4"
     >
       <img
+        alt='Chevron button for selecting the previous image.'
         src='/generic/chevron.svg' 
         className="rounded-full min-h-8 min-w-8 w-8 h-8 rotate-180 cursor-pointer"
         onClick={_ => {
@@ -114,6 +115,7 @@ export default function Carousel(){
       </div>
       
       <img
+        alt='Chevron button for selecting the next image.'
         src='/generic/chevron.svg' 
         className="rounded-full min-h-8 min-w-8 w-8 h-8 cursor-pointer"
         onClick={_ => {

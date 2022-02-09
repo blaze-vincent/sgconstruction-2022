@@ -1,9 +1,9 @@
 {
-  "name": "dhs-utilities",
+  "name": "sgconstruction-2022",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
