@@ -58,7 +58,7 @@ export default function Careers(){
         <Input type='text' name='positions' labelText='Positions of Interest' required={true} placeholderText='framing, finishing' value={positions} onChange={e => setPositions(e.target.value)}/>
         <Input type='text' name='experience' labelText='Your Construction Experience...' required={true} placeholderText='have used a speed square once' value={experience} onChange={e => setExperience(e.target.value)}/>
         <input type='submit' value='Submit'
-          className="cursor-pointer bg-[#3E356E] hover:bg-[#272145] text-white mt-2 px-4 max-w-max rounded-full"
+          className="cursor-pointer bg-sgpurple-500 hover:bg-sgpurple-700 text-white mt-2 px-4 max-w-max rounded-full"
         />
       </form>
     </div>

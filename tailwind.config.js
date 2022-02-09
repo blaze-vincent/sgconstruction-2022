@@ -4,7 +4,14 @@ module.exports = {
     "./components/**/*.js"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        sgpurple: {
+          500: '#44356b',
+          700: '#272145'
+        }
+      }
+    },
   },
   plugins: [],
 }

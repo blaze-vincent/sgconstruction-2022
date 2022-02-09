@@ -18,10 +18,10 @@ export default function ButlerBuilding(){
           The amazing style, versatility, and affordability of Butler&reg; buildings make them the logical choice for a variety of commercial facilities. Whether you’re looking for a simple building solution, a retrofit roof, or a multiple building complex, Butler buildings offer a fast, affordable, architecturally appealing, and environmentally-friendly solution with many significant advantages. The benefits a Butler&reg; building system are numerous and so are the advantages of working with S.G. Construction as your turnkey provider of building construction.
         </p>
         <h2
-          className="text-[#3E356E] text-2xl font-bold"
+          className="text-sgpurple-500 text-2xl font-bold"
         >S.G. Construction is your local Butler Builder&reg;</h2>
       </div>
-      <ButlerBadge href="https://www.butlermfg.com/" className={'fill-[#3E356E] hover:fill-[#2d1b55] w-[100rem] h-auto'}/>
+      <ButlerBadge href="https://www.butlermfg.com/" className={'fill-sgpurple-500 hover:fill-sgpurple-700 w-[100rem] h-auto'}/>
     </div>
     <p>
     At S.G. Construction, we are proud to be your local Butler Builder&reg; representing the world’s leading producer of building solutions – Butler Manufacturing™. We are your experienced local construction partner from conceptual design to final landscaping no matter what type of facility you are trying to build.

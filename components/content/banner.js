@@ -13,7 +13,7 @@ export default function Banner({imageObj: {src, alt, title}, textObj: {header, b
         className="max-w-[35rem] h-max p-7 flex flex-col items-center bg-white text-neutral-700 gap-4"
       >
         <h2
-          className="text-4xl font-bold text-[#3E356E]"
+          className="text-4xl font-bold text-sgpurple-500"
         >{header}</h2>
         <p
           className="font-medium text-xl"

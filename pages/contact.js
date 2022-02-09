@@ -38,7 +38,7 @@ export default function Contact(){
         <Input type='email' name='email' labelText='Email' required={true} value={email} placeholderText='example@email.com' onChange={e => setEmail(e.target.value)}/>
         <Input type='textarea' name='message' labelText='Message' required={true} value={message} onChange={e => setMessage(e.target.value)}/>
         <input type='submit' value='Submit'
-          className="cursor-pointer bg-[#3E356E] hover:bg-[#272145] text-white mt-2 px-4 max-w-max rounded-full"
+          className="cursor-pointer bg-sgpurple-500 hover:bg-sgpurple-700 text-white mt-2 px-4 max-w-max rounded-full"
         />
       </form>
     </div>
