@@ -17,8 +17,8 @@ export default function Footer(){
         <div
           className="flex flex-row gap-2 w-max"
         >
-          <FacebookLogo href='https://www.facebook.com/sgconstructco' className='w-7 h-7 fill-white hover:fill-neutral-400'/>
-          <LinkedinLogo href='https://www.linkedin.com/company/sgconstructco' className='w-7 h-7 fill-white hover:fill-neutral-400' />
+          <FacebookLogo href='https://www.facebook.com/sgconstructco' className='overflow-visible w-7 h-7 fill-white hover:fill-neutral-400'/>
+          <LinkedinLogo href='https://www.linkedin.com/company/sgconstructco' className='overflow-visible w-7 h-7 fill-white hover:fill-neutral-400' />
         </div>
         <ButlerBadge href='https://www.butlermfg.com/' className='fill-white w-40 h-auto hover:fill-neutral-400'/>
         <p>&copy; SG Construction Co.</p>
