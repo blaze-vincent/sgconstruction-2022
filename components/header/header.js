@@ -40,7 +40,7 @@ export default function Header(){
           className="p-3 h-[5rem] cursor-pointer"
           src='/brand/logo.svg' 
           alt="SG Construction Company and Butler General Contractors logos"
-          onClick={_ => window.location.replace('/')}
+          onClick={_ => window.location.assign('/')}
         />
         <Navbar scrolled={scrolled} collapsedLinks={collapsedLinks} setCollapsedLinks={setCollapsedLinks} activeRoute={activeRoute}/>
         <HamburgerButton visible={hamburgerButtonVisible} collapsedLinks={collapsedLinks} sendHamburgerMenuSignal={sendHamburgerMenuSignal}/>
