@@ -1,7 +1,14 @@
+import Head from 'next/head'
+
 export default function About(){
   return (<div
     className="flex flex-col gap-8 max-w-[55rem] m-auto my-8 text-lg text-neutral-700 p-4"
   >
+
+    <Head>
+      <title>About :: SG Construction</title>
+    </Head> 
+
     <h1
       className="text-4xl font-bold m-auto text-neutral-800"
     >About S.G. Construction Company</h1>

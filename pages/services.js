@@ -1,4 +1,5 @@
 import Service from "../components/content/service";
+import Head from 'next/head'
 
 export default function Services(){
 
@@ -78,6 +79,11 @@ export default function Services(){
   return <div
     className="flex flex-col gap-8 max-w-[55rem] m-auto my-8 text-lg text-neutral-700"
   >
+
+    <Head>
+      <title>Services :: SG Construction</title>
+    </Head> 
+
     <div className="text-center flex flex-col gap-4">
       <h1
         className="text-4xl font-bold m-auto text-neutral-800"

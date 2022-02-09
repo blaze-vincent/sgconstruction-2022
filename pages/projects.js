@@ -1,5 +1,6 @@
 import FeaturedProject from "../components/content/projects/featuredProject";
 import Project from "../components/content/projects/project";
+import Head from 'next/head'
 
 export default function Projects(){
 
@@ -21,6 +22,11 @@ export default function Projects(){
   return <div
     className="flex flex-col gap-8 max-w-[55rem] m-auto my-8 text-lg text-neutral-700 p-4"
   >
+
+    <Head>
+      <title>Projects :: SG Construction</title>
+    </Head> 
+
     <FeaturedProject 
       title='SCC Blackhawk Tower'
       body='S.G. Construction acted as general contractor to coordinate the quick schedule for prefab dormitories at Southeastern Community College. The project began in August and students moved in 5 months later!'

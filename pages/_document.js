@@ -15,7 +15,6 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
           rel="stylesheet"
         />
-        <link ref='/dist/style.css' rel='stylesheet' />
       </Head>
       <body>
         <Main />

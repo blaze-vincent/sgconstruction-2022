@@ -1,7 +1,5 @@
 import { useState } from "react"
 import Navlink from "./navlink"
-import Head from 'next/head'
-import { useEffect } from "react"
 
 export default function Navbar({scrolled, setCollapsedLinks, collapsedLinks, activeRoute}){
 
@@ -45,18 +43,9 @@ export default function Navbar({scrolled, setCollapsedLinks, collapsedLinks, act
     }
   }
 
-  const [activeLinkName, setActiveLinkName] = useState('')
-  useEffect(_ => {
-    const activeLinkObj = Array.from(navlinks).find(link => (link?.altLocation || `/${link.name.toLowerCase()}`) === activeRoute)
-    setActiveLinkName(activeLinkObj.name)
-  }, [])
-
   return <nav
     className="flex flex-row gap-4 overflow-hidden items-center relative "
   >
-    <Head>
-      <title>{activeLinkName} :: SG Construction</title>
-    </Head>
     {Array.from(navlinks).map((link, index) => {
       return <Navlink setHidden={setCollapsed} link={link} offset={index+10} activeRoute={activeRoute} key={index} scrolled={scrolled}/>
     })}

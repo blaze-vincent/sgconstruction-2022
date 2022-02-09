@@ -1,5 +1,5 @@
 import { useRef, useState } from "react"
-import { useEffect } from "react/cjs/react.development"
+import { useEffect } from "react"
 import Slide from "./slide"
 
 export default function Carousel(){
