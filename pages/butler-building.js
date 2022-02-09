@@ -1,11 +1,13 @@
+import ButlerBadge from "../components/svgs/butlerBadge";
+
 export default function ButlerBuilding(){
   return <div
     className="flex flex-col gap-8 max-w-[55rem] m-auto my-8 text-lg text-neutral-700 p-4"
   >
     <div className="text-center flex flex-col gap-4">
       <h1
-        className="text-4xl font-bold m-auto text-neutral-800"
-      >Butler Manufacturing&trade;</h1>
+        className="text-4xl font-bold m-auto text-neutral-800 hyphens"
+      >Butler Manufac&shy;turing&trade;</h1>
     </div>
 
     <div
@@ -19,10 +21,7 @@ export default function ButlerBuilding(){
           className="text-[#3E356E] text-2xl font-bold"
         >S.G. Construction is your local Butler Builder&reg;</h2>
       </div>
-      <img 
-        src='/brand/butler_general_contractor1.svg' 
-        alt='Butler General Contractor badge'   
-      />
+      <ButlerBadge href="https://www.butlermfg.com/" className={'fill-[#3E356E] hover:fill-[#2d1b55] w-[100rem] h-auto'}/>
     </div>
     <p>
     At S.G. Construction, we are proud to be your local Butler Builder&reg; representing the world’s leading producer of building solutions – Butler Manufacturing™. We are your experienced local construction partner from conceptual design to final landscaping no matter what type of facility you are trying to build.

@@ -1,3 +1,7 @@
+import ButlerBadge from './svgs/butlerBadge'
+import FacebookLogo from './svgs/facebookLogo'
+import LinkedinLogo from './svgs/linkedinLogo'
+
 export default function Footer(){
   return (<div
     className="bg-neutral-900 py-6 px-3 text-white"
@@ -13,25 +17,10 @@ export default function Footer(){
         <div
           className="flex flex-row gap-2 w-max"
         >
-          <img
-            alt='Facebook icon'
-            src='/social/facebook_icon.svg'
-            className="w-7 h-7"
-          >
-          </img>
-          <img
-            alt='LinkedIn icon'
-            src='/social/linkedin_icon.svg'
-            className="w-7 h-7"
-          >
-          </img>
+          <FacebookLogo href='https://www.facebook.com/sgconstructco' className='w-7 h-7 fill-white hover:fill-neutral-400'/>
+          <LinkedinLogo href='https://www.linkedin.com/company/sgconstructco' className='w-7 h-7 fill-white hover:fill-neutral-400' />
         </div>
-        <img
-          alt='Butler General Contractor badge'
-          src='/brand/butler_general_contractor.svg'
-          title='Butler General Contractor'
-          className="h-20"
-        ></img>
+        <ButlerBadge href='https://www.butlermfg.com/' className='fill-white w-40 h-auto hover:fill-neutral-400'/>
         <p>&copy; SG Construction Co.</p>
       </div>
       <div

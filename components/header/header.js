@@ -3,6 +3,7 @@ import { useRef, useEffect, useState } from "react"
 import HamburgerButton from "./navbar/hamburgerMenu/hamburgerButton";
 import { useRouter } from "next/router"
 import HamburgerMenu from "./navbar/hamburgerMenu/hamburgerMenu";
+import CompanyLogo from "../svgs/companylogo";
 
 export default function Header(){
 
@@ -36,12 +37,8 @@ export default function Header(){
       }
     >    
       <div className="p-3 max-w-screen-xl justify-between m-auto flex flex-row gap-4 items-center">
-        <img
-          className="p-3 h-[5rem] cursor-pointer"
-          src='/brand/logo.svg' 
-          alt="SG Construction Company and Butler General Contractors logos"
-          onClick={_ => window.location.assign('/')}
-        />
+        <CompanyLogo href='/' className='fill-[#44356b] hover:fill-[#2d1b55] w-[12rem] min-w-[12rem] overflow-visible h-auto' />
+
         <Navbar scrolled={scrolled} collapsedLinks={collapsedLinks} setCollapsedLinks={setCollapsedLinks} activeRoute={activeRoute}/>
         <HamburgerButton visible={hamburgerButtonVisible} collapsedLinks={collapsedLinks} sendHamburgerMenuSignal={sendHamburgerMenuSignal}/>
       </div>
