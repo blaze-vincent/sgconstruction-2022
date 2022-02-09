@@ -83,7 +83,7 @@ export default function Services(){
         className="text-4xl font-bold m-auto text-neutral-800"
       >Construction Services</h1>
       <h2
-        className="text-xl font-semibold m-auto text-neutral-800"
+        className="text-xl font-medium m-auto text-neutral-800"
       >Since our beginnings, S.G. has been committed to providing quality service in every way!</h2>
     </div>
 
