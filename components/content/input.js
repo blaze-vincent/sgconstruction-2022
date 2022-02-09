@@ -1,4 +1,4 @@
-export default function Input({type, labelText, name, required, placeholderText}){
+export default function Input({type, labelText, name, required, placeholderText, value, onChange}){
   return <div className="flex flex-col w-full">
     <div className="flex flex-row gap-2 items-center justify-start">
       <label 
@@ -14,6 +14,8 @@ export default function Input({type, labelText, name, required, placeholderText}
         rows={4}
         className="resize-none px-2 py-1 border-solid border-neutral-400 border-2"
         placeholder="write your message here"
+        value={value}
+        onChange={onChange}
       />
     : <input 
       type={type} 
@@ -21,6 +23,8 @@ export default function Input({type, labelText, name, required, placeholderText}
       required={required} 
       placeholder={placeholderText}
       className="px-2 py-1 border-solid border-neutral-400 border-2"
+      value={value}
+      onChange={onChange}
     />
     }
   </div>

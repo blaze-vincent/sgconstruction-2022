@@ -1,7 +1,14 @@
 import ContactMethod from '../components/content/contactMethod';
 import Input from '../components/content/input'
+import { useState } from 'react'
 
 export default function Contact(){
+
+  const [name, setName] = useState('')
+  const [phone, setPhone] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+
   return <div
     className="flex flex-col gap-8 max-w-[55rem] m-auto my-8 text-lg text-neutral-700 p-4"
   >
@@ -19,12 +26,17 @@ export default function Contact(){
 
       <form
         className="flex flex-col gap-2 w-screen max-w-[25rem] p-4"
-        onSubmit={e => {e.preventDefault(); console.log(e)}}
+        onSubmit={e => {
+          e.preventDefault()
+          window.location.href = `
+          mailto:info@sgconstructco.com?subject=Contact%20Request&body=Name%3a%20${encodeURIComponent(name)}%0aPhone%20Number%3a%20${encodeURIComponent(phone)}%0aEmail%20Address%3a%20${encodeURIComponent(email)}%0aMessage%3a%20${encodeURIComponent(message)}
+          `
+        }}
       >
-        <Input type='text' name='name' labelText='Name' required={true} placeholderText='john doe'/>
-        <Input type='tel' name='phone' labelText='Phone' required={true} placeholderText='000-000-0000'/>
-        <Input type='email' name='email' labelText='Email' required={true} placeholderText='example@email.com'/>
-        <Input type='textarea' name='message' labelText='Message' required={true} />
+        <Input type='text' name='name' labelText='Name' required={true} value={name} placeholderText='john doe' onChange={e => setName(e.target.value)}/>
+        <Input type='tel' name='phone' labelText='Phone' required={true} value={phone} placeholderText='000-000-0000' onChange={e => setPhone(e.target.value)}/>
+        <Input type='email' name='email' labelText='Email' required={true} value={email} placeholderText='example@email.com' onChange={e => setEmail(e.target.value)}/>
+        <Input type='textarea' name='message' labelText='Message' required={true} value={message} onChange={e => setMessage(e.target.value)}/>
         <input type='submit' value='Submit'
           className="cursor-pointer bg-[#3E356E] hover:bg-[#272145] text-white mt-2 px-4 max-w-max rounded-full"
         />
