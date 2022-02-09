@@ -68,6 +68,10 @@ export default function Carousel(){
   }
   useEffect(_ => {
     scrollerEl.current.style.transform = `translateX(-${slideShown * 100}%)`;
+    const effect = setTimeout(_ => {
+      scroll(slideShown + 1)
+    }, 5000)
+    return _ => clearTimeout(effect)
   }, [slideShown])
 
   return <div
@@ -99,8 +103,8 @@ export default function Carousel(){
         {new Array(slides.length).fill('').map((item, index) => {
           return <button 
             key={index} 
-            className={`rounded-full min-h-3 min-w-3 w-3 h-3 block border-solid border-white border-[1px] hover:bg-neutral-600
-              ${(slideShown === index) ? 'bg-neutral-900' : 'bg-white'}
+            className={`rounded-full min-h-3 min-w-3 w-3 h-3 block border-solid bg-white  hover:bg-neutral-600
+              ${(slideShown === index) ? 'opacity-100' : 'opacity-25'}
             `} 
             onClick={_ => {
               scroll(index)
