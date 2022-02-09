@@ -46,7 +46,7 @@ export default function Careers(){
         onSubmit={e => {
           e.preventDefault()
           window.location.href = `
-          mailto:info@sgconstructco.com?subject=Application%20Form&body=Name%3a%20${encodeURIComponent(name)}%0aAvailable%20Start%20Date%3a%20${encodeURIComponent(startDate)}%0aEmail%20Address%3a%20${encodeURIComponent(email)}%0aPhone%20Number%3a%20${encodeURIComponent(phone)}%0aBirthday%3a%20${encodeURIComponent(birthday)}%0aPositions%20of%20Interest%3a%20${encodeURIComponent(positions)}%0aConstruction%20Experience%3a%20${encodeURIComponent(experience)}
+          mailto:info@sgconstructco.com?subject=Application%20Form&body=Name%3a%20${encodeURIComponent(name)}%0a${startDate && `Available%20Start%20Date%3a%20${encodeURIComponent(startDate)}%0a`}Email%20Address%3a%20${encodeURIComponent(email)}%0aPhone%20Number%3a%20${encodeURIComponent(phone)}%0a${birthday && `Birthday%3a%20${encodeURIComponent(birthday)}%0a`}Positions%20of%20Interest%3a%20${encodeURIComponent(positions)}%0aConstruction%20Experience%3a%20${encodeURIComponent(experience)}
           `
         }}
       >
