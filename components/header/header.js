@@ -3,7 +3,7 @@ import { useRef, useEffect, useState } from "react"
 import HamburgerButton from "./navbar/hamburgerMenu/hamburgerButton";
 import { useRouter } from "next/router"
 import HamburgerMenu from "./navbar/hamburgerMenu/hamburgerMenu";
-import CompanyLogo from "../svgs/companylogo";
+import CompanyLogo from "../svgs/companyLogo";
 
 export default function Header(){
 
