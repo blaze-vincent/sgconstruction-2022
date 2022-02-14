@@ -18,3 +18,4 @@ deploy:
     # If you're using a different branch name, add it here
     all_branches: true
     condition: $TRAVIS_BRANCH =~ ^(master|main)$
+#copied from https://dev.to/jameswallis/deploying-a-next-js-app-to-github-pages-24pn
