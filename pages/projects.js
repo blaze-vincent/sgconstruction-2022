@@ -19,7 +19,7 @@ export default function Projects(){
   }
   ]
 
-  return <div
+  return <article
     className="flex flex-col gap-8 max-w-[55rem] m-auto my-8 text-lg text-neutral-700 p-4"
   >
 
@@ -34,5 +34,5 @@ export default function Projects(){
     
     {projects.map((project, index) => <Project key={index} title={project.title} body={project.body}/>)}
 
-  </div>
+  </article>
 }

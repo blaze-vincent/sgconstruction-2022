@@ -1,5 +1,5 @@
 export default function Banner({imageObj: {src, alt, title}, textObj: {header, body}}){
-  return <div
+  return <section
     className="flex flex-row items-center content-center max-w-screen-2xl relative"
   >
     <img 
@@ -20,5 +20,5 @@ export default function Banner({imageObj: {src, alt, title}, textObj: {header, b
         >{body}</p>
       </div>
     </div>
-  </div>
+  </section>
 }

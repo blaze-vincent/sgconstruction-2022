@@ -9,10 +9,10 @@ export default function Slide({image: {src, alt, title}, text: {header, tag}, te
     3: 'bottom-8 right-0',
   }
 
-  return <div
+  return <figure
     className="w-full h-full relative after:absolute after:w-full after:h-full after:bg-neutral-900 after:left-0 after:top-0 after:z-10 after:opacity-25"
   >
-    <div
+    <figcaption
       className={`h-max w-max absolute p-4 drop-shadow-xl shadow-neutral-900 z-20
       ${textPositions[textPosition]}
       `}
@@ -23,12 +23,12 @@ export default function Slide({image: {src, alt, title}, text: {header, tag}, te
       <p
         className="text-xl text-white font-extralight"
       >{tag}</p>
-    </div>
+    </figcaption>
     <img 
       src={src} 
       alt={alt} 
       title={title} 
       className="w-screen max-w-screen-xl h-full object-cover left-0 top-0"  
     />
-  </div>
+  </figure>
 }

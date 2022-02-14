@@ -2,7 +2,7 @@ export default function Service({image: {url, alt, title}, text: {header, body},
   
   const highResUrl =  url.split('.').join('_hq.')
   
-  return <div
+  return <section
     className={`flex ${flip ? 'flex-row-reverse' : 'flex-row'} gap-4 w-full items-center flex-wrap sm:flex-nowrap justify-center sm:justify-between`}
   >
     <a
@@ -30,5 +30,5 @@ export default function Service({image: {url, alt, title}, text: {header, body},
         className="font-semibold underline"
       >{followupLink.followupText}</a>}</p>
     </div>
-  </div>
+  </section>
 }

@@ -41,7 +41,7 @@ export default function BadgeSection(){
     }
   ]
 
-  return <div
+  return <section
     className="flex flex-col w-full md:grid md:grid-cols-3 max-w-screen-xl m-auto gap-4 items-center md:justify-items-center"
   >
     {
@@ -54,5 +54,5 @@ export default function BadgeSection(){
         />
       })
     }
-  </div>
+  </section>
 }

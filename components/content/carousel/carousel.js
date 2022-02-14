@@ -74,7 +74,7 @@ export default function Carousel(){
     return _ => clearTimeout(effect)
   }, [slideShown])
 
-  return <div
+  return <section
     className="relative max-w-screen-xl w-screen m-auto h-[35rem] max-h-[80vh] overflow-x-hidden"
   >
     <div
@@ -123,5 +123,5 @@ export default function Carousel(){
         }}
       />
     </div>
-  </div>
+  </section>
 }

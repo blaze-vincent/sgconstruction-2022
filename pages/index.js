@@ -16,7 +16,7 @@ export default function Home() {
     body: 'Satisfaction Guaranteed by our professionals committed to upholding the honesty and integrity of the construction industry; creating innovative solutions; ensuring quality and service for our customers!'
   }
   return (
-    <div
+    <article
       className="flex flex-col max-w-screen-2xl m-auto gap-8 my-8"
     >
 
@@ -30,6 +30,6 @@ export default function Home() {
       />
       <BadgeSection />
       <Carousel />
-    </div>
+    </article>
   )
 }

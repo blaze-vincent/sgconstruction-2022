@@ -1,5 +1,5 @@
 export default function ContactMethod({title, children}){
-  return <div
+  return <section
     className="flex flex-col gap-2"
   >
     <h2
@@ -8,5 +8,5 @@ export default function ContactMethod({title, children}){
     <div
       className="flex flex-col gap-1"
     >{children}</div>
-  </div>
+  </section>
 }

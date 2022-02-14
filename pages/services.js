@@ -76,7 +76,7 @@ export default function Services(){
     },
   ]
 
-  return <div
+  return <article
     className="flex flex-col gap-8 max-w-[55rem] m-auto my-8 text-lg text-neutral-700"
   >
 
@@ -84,14 +84,14 @@ export default function Services(){
       <title>Services :: SG Construction</title>
     </Head> 
 
-    <div className="text-center flex flex-col gap-4">
+    <hgroup className="text-center flex flex-col gap-4">
       <h1
         className="text-4xl font-bold m-auto text-neutral-800"
       >Construction Services</h1>
       <h2
         className="text-xl font-medium m-auto text-neutral-800"
       >Since our beginnings, S.G. has been committed to providing quality service in every way!</h2>
-    </div>
+    </hgroup>
 
 
       {services.map((service, index) => <Service
@@ -103,5 +103,5 @@ export default function Services(){
       />)}
     
     
-  </div>
+  </article>
 }
