@@ -6,8 +6,8 @@ export default function Navlink({link, activeRoute, scrolled, setHidden}){
   const containerEl = useRef(null)
   useEffect(_ => {
     const observer = new IntersectionObserver(([element]) => {
-      setVisible(element.intersectionRatio === 1);
-    }, {threshold: [1]})
+      setVisible(element.isIntersecting);
+    }, {root: containerEl.current.closest('nav'), threshold: [1]})
     observer.observe(containerEl.current)
   }, [])
 
