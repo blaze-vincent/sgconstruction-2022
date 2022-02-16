@@ -48,7 +48,7 @@ export default function Careers(){
 
       <section>
         <form
-          className="flex flex-col gap-2 w-screen max-w-[25rem] p-4"
+          className="flex flex-col gap-2 w-[25rem] max-w-full p-4"
           onSubmit={e => {
             e.preventDefault()
             window.location.href = `
