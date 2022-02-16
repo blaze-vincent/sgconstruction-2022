@@ -46,7 +46,7 @@
       necessitate seemed like a cool idea but I'm considering removing it now because it doesn't collapse at
       the same dynamic breakpoints across browsers.
 
-      Update 02/16/2022: Adding a root element to the intersectionObservers made behavior consistent lol
+      Update 02&sol;16&sol;2022&colon; Adding a root element to the intersectionObservers made behavior consistent lol
     </p>
     <p>
       I created this website for Drake Hardware & Software, who currently and presumably will continue to host the 
