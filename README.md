@@ -6,10 +6,10 @@
   <section>
     <p>
       This is the Nextjs recreation of the formerly Concrete5-generated <a href='https://sgconstructco.com'>
-      sgconstructco.com</a> website. The website does not utilize a Nextjs server; this version of the website 
+      sgconstructco.com</a> website. The website is not served by a Nextjs server; this version of the website 
       was designed to be exported statically. As such, 
       <a href='https://nextjs.org/docs/advanced-features/static-html-export'>unsupported features</a> like 
-      &lt;img&gt; optimization are not utilized.
+      &lt;Image&gt; optimization are not utilized.
     </p>
   </section>
   <section>
@@ -50,7 +50,7 @@
     <p>
       I created this website for Drake Hardware & Software, who currently and presumably will continue to host the 
       website after I have left their company. For the sake of preserving the state of the website at the time of my
-      latest update, I am also hosting a GitHub Pages clone of the website, which is not intended to receive
+      latest update, I am also hosting a Vercek clone of the website, which is not intended to receive
       commercial traffic. 
     </p>
   </aside>
