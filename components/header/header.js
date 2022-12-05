@@ -16,7 +16,10 @@ export default function Header(){
   const [collapsedLinks, setCollapsedLinks] = useState(new Set([]))
 
   const router = useRouter()
-  const [activeRoute, _] = useState(router.pathname)
+  const [activeRoute, setActiveRoute] = useState(router.pathname)
+  useEffect(_ => {
+    setActiveRoute(router.pathname)
+  }, [router])
 
   const [hamburgerMenuVisible, setHamburgerMenuVisible] = useState(false);
   const sendHamburgerMenuSignal = function(){
