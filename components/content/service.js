@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Service({image: {url, alt, title}, text: {header, body}, followupLink={href:'', followupText:''}, flip = false}){
   
   const highResUrl =  url.split('.').join('_hq.')
@@ -5,18 +7,20 @@ export default function Service({image: {url, alt, title}, text: {header, body},
   return <section
     className={`flex ${flip ? 'flex-row-reverse' : 'flex-row'} gap-4 w-full items-center flex-wrap sm:flex-nowrap justify-center sm:justify-between`}
   >
-    <a
+    <Link 
       href={highResUrl}
     >
-      <img 
-        className="object-cover"
-        width={350}
-        height={225}
-        src={url}
-        alt={alt}
-        title={title}
-      />
-    </a>
+      <a>
+        <img 
+          className="object-cover"
+          width={350}
+          height={225}
+          src={url}
+          alt={alt}
+          title={title}
+        />
+      </a>
+    </Link>
     <div
       className="flex flex-col gap-4 w-full p-2"
     >
