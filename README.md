@@ -38,6 +38,51 @@
       <li>Page-wide search was scrapped as a server is necessary for this</li>
     </ul>
   </section>
+  <section>
+    <h3>Site Screenshots</h3>
+    <div>
+      <h4>Home (current)</h4>
+      <img src="currentsite_screenshots/home.png" width="600"/>
+      <h4>Home (old)</h4>
+      <img src="oldsite_screenshots/fullpages/home.png" width="600"/>
+    </div>
+    <div>
+      <h4>About (current)</h4>
+      <img src="currentsite_screenshots/about.png" width="600"/>
+      <h4>About (old)</h4>
+      <img src="oldsite_screenshots/fullpages/about.png" width="600"/>
+    </div>
+    <div>
+      <h4>Services (current)</h4>
+      <img src="currentsite_screenshots/services.png" width="600"/>
+      <h4>Services (old)</h4>
+      <img src="oldsite_screenshots/fullpages/services.png" width="600"/>
+    </div>
+    <div>
+      <h4>Projects (current)</h4>
+      <img src="currentsite_screenshots/projects.png" width="600"/>
+      <h4>Projects (old)</h4>
+      <img src="oldsite_screenshots/fullpages/projects.png" width="600"/>
+    </div>
+    <div>
+      <h4>Butler Building (current)</h4>
+      <img src="currentsite_screenshots/butler-building.png" width="600"/>
+      <h4>Butler Building (old)</h4>
+      <img src="oldsite_screenshots/fullpages/butler-building.png" width="600"/>
+    </div>
+    <div>
+      <h4>Careers (current)</h4>
+      <img src="currentsite_screenshots/careers.png" width="600"/>
+      <h4>Careers (old)</h4>
+      <img src="oldsite_screenshots/fullpages/careers.png" width="600"/>
+    </div>
+    <div>
+      <h4>Contact (current)</h4>
+      <img src="currentsite_screenshots/contact.png" width="600"/>
+      <h4>Contact (old)</h4>
+      <img src="oldsite_screenshots/fullpages/contact.png" width="600"/>
+    </div>
+  </section>
   <aside>
     <h3>Reflection</h3>
     <p>
